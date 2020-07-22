@@ -16,7 +16,7 @@ void setup() {
   
  size (1920, 1080);
  smooth();
- myPort = new Serial(this,"/dev/tty.wchusbserial1410", 9600); // starts the serial communication
+ myPort = new Serial(this,"COM5", 9600); // starts the serial communication
  myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
  orcFont = loadFont("PTSans-BoldItalic-48.vlw");
 }
